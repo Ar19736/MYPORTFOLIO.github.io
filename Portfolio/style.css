@@ -1,0 +1,235 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: white;
+    color: black;
+  }
+  
+  /* Navigation */
+  .nav, .footer {
+    width: 100%;
+    padding: 1em 2em;
+    border: 1px solid black;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .nav > div:first-child,
+  .footer > div:first-child {
+    text-align: left;
+    justify-self: start;
+  }
+  
+  .nav > div:nth-child(2),
+  .footer > div:nth-child(2) {
+    justify-self: center;
+    text-align: center;
+  }
+  
+  .nav > div:last-child,
+  .footer > div:last-child {
+    text-align: right;
+    justify-self: end;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+    padding-top: 80px;
+  }
+  
+  .header h1 {
+    font-size: 100px;
+    margin: 0;
+  }
+  
+  .subheading {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 1rem;
+    color: #444;
+  }
+  
+  .header-line {
+    width: 460px;
+    height: 1px;
+    background-color: black;
+    border: none;
+    margin: 1.5rem auto 0 auto;
+  }
+  
+  .description {
+    max-width: 700px;
+    margin: 2rem auto 1.5rem auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+  }
+  
+  .insta-button {
+    display: inline-block;
+    margin: 0 auto 3rem auto;
+    padding: 0.6em 1.4em;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    font-size: 14px;
+  }
+  
+  .insta-button:hover {
+    background: black;
+    color: white;
+  }
+  
+  /* Gallery Grid */
+  .view {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px 60px 80px 60px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  /* Image Cards */
+  .block {
+    width: 100%;
+    aspect-ratio: 2/3;
+    border: 0.5mm solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -10px,
+                rgba(0, 0, 0, 0.3) 0px 20px 40px -20px,
+                rgba(10, 37, 64, 0.2) 0px -1px 4px inset;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+  }
+  
+  .block:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+  
+  /* Refined Quotes Layout */
+.quote {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 160px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    white-space: normal;
+    word-break: normal;
+  }
+  
+  
+  /* Lightbox */
+  #lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(30, 30, 30, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+  
+  #lightbox.active {
+    display: flex;
+  }
+  
+  #lightbox img {
+    max-width: 90vw;
+    max-height: 80vh;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    animation: zoomIn 0.3s ease;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.85);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    z-index: 101;
+    transition: background 0.2s ease;
+  }
+  
+  .arrow-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .arrow-btn.left {
+    left: 40px;
+  }
+  
+  .arrow-btn.right {
+    right: 40px;
+  }
+  
+  /* Quote Popup */
+  #quote-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(30, 30, 30, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  #quote-popup.active {
+    display: flex;
+  }
+  
+  .quote-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    animation: zoomIn 0.3s ease;
+  }
+  

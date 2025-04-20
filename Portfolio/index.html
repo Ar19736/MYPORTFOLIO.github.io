@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <div>Arman Nattagh</div>
+    <div>3200363</div>
+    <div>Project 4</div>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>- MY PORTFOLIO -</h1>
+    <p class="subheading">My Creative Journey</p>
+    <hr class="header-line" />
+    <p class="description">
+      This site is a curated visual archive of my creative practice—each image a window into my design journey. Through light, form, and color, this portfolio reflects moments of inspiration, experimentation, and emotion. Explore the rhythm between structure and spontaneity.
+    </p>
+    <a class="insta-button" href="https://www.instagram.com/nattagharman7?igsh=eXN5d3poc3ZzMml1&utm_source=qr" target="_blank">Instagram ↗</a>
+  </div>
+
+  <!-- Gallery -->
+  <div class="view">
+    <img class="block" src="images/1.png" alt="Card 1" />
+    <div class="quote">“To create one’s own world takes courage.”<br><strong>– Georgia O’Keeffe</strong></div>
+    <img class="block" src="images/2.png" alt="Card 2" />
+    <div class="quote">“Art is the lie that enables us to realize the truth.”<br><strong>– Pablo Picasso</strong></div>
+    <img class="block" src="images/3.png" alt="Card 3" />
+    <div class="quote">“The job of the artist is always to deepen the mystery.”<br><strong>– Francis Bacon</strong></div>
+    <img class="block" src="images/4.png" alt="Card 4" />
+    <div class="quote">“Simplicity is the ultimate sophistication.”<br><strong>– Leonardo da Vinci</strong></div>
+    <img class="block" src="images/5.png" alt="Card 5" />
+    <div class="quote">“Art enables us to find ourselves and lose ourselves at the same time.”<br><strong>– Thomas Merton</strong></div>
+    <img class="block" src="images/6.png" alt="Card 6" />
+    <div class="quote">“You don’t take a photograph, you make it.”<br><strong>– Ansel Adams</strong></div>
+    <img class="block" src="images/7.png" alt="Card 7" />
+    <div class="quote">“The world always seems brighter when you’ve just made something.”<br><strong>– Neil Gaiman</strong></div>
+    <img class="block" src="images/8.png" alt="Card 8" />
+    <div class="quote">“Color is the keyboard, the eyes are the harmonies.”<br><strong>– Wassily Kandinsky</strong></div>
+    <img class="block" src="images/9.png" alt="Card 9" />
+    <div class="quote">“Great art picks up where nature ends.”<br><strong>– Marc Chagall</strong></div>
+    <img class="block" src="images/10.png" alt="Card 10" />
+    <div class="quote">“The painter tries to master color, but ends up its slave.”<br><strong>– Goethe</strong></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button class="arrow-btn left">&#10094;</button>
+    <div class="lightbox-content">
+      <img src="" alt="Expanded View" />
+    </div>
+    <button class="arrow-btn right">&#10095;</button>
+  </div>
+
+  <!-- Quote Popup -->
+  <div id="quote-popup">
+    <div class="quote-box">
+      <p id="quote-text"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>My Portfolio</div>
+  </div>
+
+</body>
+</html>
