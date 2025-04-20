@@ -14,6 +14,14 @@ gsap.utils.toArray(".block").forEach((el) => {
     }
   });
 });
+// This GSAP scroll-triggered animation block is my favourite because it transforms the experience of 
+// browsing my portfolio into something dynamic and immersive. Instead of static content, the images 
+// gracefully animate into view as you scroll, which adds rhythm and presence to the visual storytelling.
+// It solved a key problem in my layout: making the transition from the landing section to the image grid 
+// feel intentional and fluid. I also had to tweak the animation thresholds and easing to match the pacing 
+// of my design. I think it’s a clean example of using JavaScript to enhance design without overwhelming it.
+
+
 
 // Lightbox
 const lightbox = document.getElementById("lightbox");
